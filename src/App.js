@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { MarkdownInput } from './components/MarkdownInput';
 import { MarkdownOutput } from './components/MarkdownOutput';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -23,8 +24,8 @@ class App extends Component {
           initialMarkdown={this.state.markdown}
           updateMarkdown={this.onMarkdownEntered.bind(this)}
           markdown={this.state.markdown} />
-        {/* TODO send markdown to output */}
-        <MarkdownOutput />
+        <MarkdownOutput 
+          output={this.state.markdown} />
       </div>
     )
   }

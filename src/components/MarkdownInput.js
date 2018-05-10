@@ -21,7 +21,7 @@ export class MarkdownInput extends Component {
     render() {
       return (
         <div className='item'>          
-          <textarea id="input"
+          <textarea id="raw-markdown"
             defaultValue={this.state.rawMarkdown}
             onChange={(this.handleChange)}/>
         </div>

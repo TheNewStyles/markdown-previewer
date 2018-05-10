@@ -15,7 +15,12 @@ textarea {
     margin: auto;
 }
 
-#input {
+#raw-markdown {
+    height: 95%;
+    width: 95%;
+}
+
+#converted-markdown {
     height: 95%;
     width: 95%;
 }
