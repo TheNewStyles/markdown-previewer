@@ -1,8 +1,9 @@
 {
-  "name": "markdown-previewer",
+  "name": "markdown-pre-package",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "marked": "^0.3.19",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -13,5 +14,18 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "Build a Markdown Previewer",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheNewStyles/react-markdown-previewer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheNewStyles/react-markdown-previewer/issues"
+  },
+  "homepage": "https://github.com/TheNewStyles/react-markdown-previewer#readme"
 }
