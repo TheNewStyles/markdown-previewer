@@ -1,6 +1,7 @@
 body {
   font: 100% "Open Sans", "sans-serif";
-  background-color: #FFCD66; }
+  background-color: white;
+  color: #546271; }
 
 textarea {
   resize: none;
@@ -11,7 +12,6 @@ textarea {
 .container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
   height: 100vh; }
 
 .item {
@@ -19,18 +19,16 @@ textarea {
   width: 500px;
   height: 600px;
   margin: 25px;
-  overflow-y: scroll;
   flex: 1 auto; }
 
 #header {
   font: "Open Sans", "sans-serif";
-  color: #2E4052;
-  margin: auto;
-  align: 'center'; }
+  text-align: center; }
 
 #raw-markdown {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  overflow-y: scroll; }
 
 #converted-markdown {
   height: 100%;

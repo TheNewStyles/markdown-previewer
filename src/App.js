@@ -8,7 +8,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      markdown: 'Heading\n=======\n\nSub-heading\n-----------\n \n### Another deeper heading\n \nParagraphs are separated\nby a blank line.\n\nLeave 2 spaces at the end of a line to do a  \nline break\n\nText attributes *italic*, **bold**, \n`monospace`, ~~strikethrough~~ .\n\nShopping list:\n\n  * apples\n  * oranges\n  * pears\n\nNumbered list:\n\n  1. apples\n  2. oranges\n  3. pears\n\nThe rain---not the reign---in\nSpain.\n\n *[Tyler Peterson](wwww.github.com/thenewstyles)*'
+      markdown: '\n\n   Heading\n   =======\n   \n   Sub-heading\n   -----------\n    \n   ### Another deeper heading\n    \n   Paragraphs are separated\n   by a blank line.\n   \n   Leave 2 spaces at the end of a line to do a  \n   line break\n   \n   Text attributes *italic*, **bold**, \n   `monospace`, ~~strikethrough~~ .\n   \n   Shopping list:\n   \n     * apples\n     * oranges\n     * pears\n   \n   Numbered list:\n   \n     1. apples\n     2. oranges\n     3. pears\n   \n   The rain---not the reign---in\n   Spain.\n   \n    *[Tyler Peterson](wwww.github.com/thenewstyles)*'
     };
   }
 
@@ -26,8 +26,7 @@ class App extends Component {
         <div className='container'>
           <MarkdownInput
             initialMarkdown={this.state.markdown}
-            updateMarkdown={this.onMarkdownEntered.bind(this)}
-            markdown={this.state.markdown} />
+            updateMarkdown={this.onMarkdownEntered.bind(this)}/>
           <MarkdownOutput 
             output={this.state.markdown} />
         </div>
