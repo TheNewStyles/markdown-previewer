@@ -21,7 +21,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "npm run build&&gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "description": "Build a Markdown Previewer",
   "main": "index.js",
@@ -37,5 +37,5 @@
   "bugs": {
     "url": "https://github.com/TheNewStyles/react-markdown-previewer/issues"
   },
-  "homepage": "https:///TheNewStyles.github.io/react-markdown-previewer"
+  "homepage": "https://react-markdown-previewer.com"
 }
