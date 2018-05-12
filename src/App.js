@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { MarkdownInput } from './components/MarkdownInput';
 import { MarkdownOutput } from './components/MarkdownOutput';
+import { Header } from './components/Header';
 
 class App extends Component {
   constructor(props) {
@@ -19,13 +20,17 @@ class App extends Component {
 
   render() {
     return (
-      <div className='container'>
-        <MarkdownInput
-          initialMarkdown={this.state.markdown}
-          updateMarkdown={this.onMarkdownEntered.bind(this)}
-          markdown={this.state.markdown} />
-        <MarkdownOutput 
-          output={this.state.markdown} />
+      
+      <div>
+        <Header/>
+        <div className='container'>
+          <MarkdownInput
+            initialMarkdown={this.state.markdown}
+            updateMarkdown={this.onMarkdownEntered.bind(this)}
+            markdown={this.state.markdown} />
+          <MarkdownOutput 
+            output={this.state.markdown} />
+        </div>
       </div>
     )
   }
